@@ -15,6 +15,7 @@ import com.example.prototype3.R
 class NotificationService: IntentService("NotificationService") {
     private lateinit var mNotification: Notification
     private val mNotificationId: Int = 1000
+    private val mNotificationId1: Int = 1001
     @SuppressLint("NewApi")
 
     private fun createChannel(){
@@ -48,16 +49,19 @@ class NotificationService: IntentService("NotificationService") {
     override fun onHandleIntent(intent: Intent?) {
         //Create Channel
         createChannel()
+
         var timestamp: Long = 0
         if (intent != null && intent.extras != null) {
             timestamp = intent.extras!!.getLong("timestamp")
         }
-        if (timestamp > 0) {
+        if (timestamp > 0 ) {
 
 
             val context = this.applicationContext
             var notificationManager: NotificationManager = context.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
             val notifyIntent = Intent(this, ResultActivity::class.java)
+
+
 
             val title = "Sample Notification"
             val message = "You have received a sample notification. This notification will take you to the details page."
@@ -112,6 +116,7 @@ class NotificationService: IntentService("NotificationService") {
             // mNotificationId is a unique int for each notification that you must define
             notificationManager.notify(mNotificationId, mNotification)
         }
+
     }
 }
 

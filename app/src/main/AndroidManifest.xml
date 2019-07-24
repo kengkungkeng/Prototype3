@@ -4,7 +4,9 @@
           package="com.example.prototype3">
 
     <dist:module dist:instant="true"/>
+
     <uses-permission android:name="android.permission.SET_ALARM"/>
+
     <application
             android:allowBackup="true"
             android:icon="@mipmap/ic_launcher"
@@ -12,38 +14,32 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-
+        <activity android:name=".Notificate_OldActivity">
+        </activity>
+        <activity android:name=".Edit_Old_Patient">
+        </activity>
+        <activity android:name=".Detail_Show_For_Old_Patient">
+        </activity>
+        <activity android:name=".Main_menu_for_new">
+        </activity>
         <activity android:name=".NotificateActivity">
         </activity>
-        <activity android:name=".Detail_Show">
+        <activity android:name=".Detail_Show_For_New_Patient">
         </activity>
-        <activity android:name=".Detail_input_Activity">
+        <activity android:name=".New_input_Activity">
         </activity>
         <activity android:name=".Status_Activity">
         </activity>
         <activity android:name=".SymptommActivity">
         </activity>
-
         <activity android:name=".List_patient">
         </activity>
-
-
-
-
-
-
         <activity android:name=".Detail_input">
         </activity>
-
-
-
         <activity android:name=".Main_menu">
         </activity>
-
-
         <activity android:name=".Register_acc">
         </activity>
-
         <activity
                 android:name=".Splash_screen"
                 android:noHistory="true"
@@ -57,176 +53,1235 @@
         <activity android:name=".MainActivity">
         </activity>
 
-
         <receiver
                 android:name=".Noti.AlarmReceiver"
-                android:enabled="true" />
+                android:enabled="true"/>
 
         <service
                 android:name=".Noti.NotificationService"
-                android:enabled="true" />
+                android:enabled="true"/>
 
         <activity
                 android:name=".Noti.ResultActivity"
                 android:excludeFromRecents="true"
                 android:label=".Noti@string/notification"
                 android:launchMode="singleTask"
-                android:taskAffinity="" />
-        ////////////////////////////////////////////////////////////////////
+                android:taskAffinity=""/>
+
         <receiver
-                android:name="com.example.prototype3.PL.Paralysiss.ParalysisS3AR"
-                android:enabled="true" />
+                android:name=".PL.S1.Paralysiss.ParalysisS1AR"
+                android:enabled="true"/>
 
         <service
-                android:name="com.example.prototype3.PL.Paralysiss.ParalysisS1NS"
-                android:enabled="true" />
+                android:name=".PL.S1.Paralysiss.ParalysisS1NS"
+                android:enabled="true"/>
 
-        <activity android:name="com.example.prototype3.PL.Paralysiss.ParalysisS1RA"
-                  android:excludeFromRecents="true"
-                  android:label=".Noti@string/notification"
-                  android:launchMode="singleTask"
-                  android:taskAffinity="" />
-        ////////////////////////////////////////////////////////////////////
+        <activity
+                android:name=".PL.S1.Paralysiss.ParalysisS1RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
         <receiver
-            android:name="com.example.prototype3.PL.Paralysiss2.ParalysisS2AR"
-            android:enabled="true" />
+                android:name=".PL.S1.Paralysiss2.ParalysisS2AR"
+                android:enabled="true"/>
 
         <service
-                android:name="com.example.prototype3.PL.Paralysiss2.ParalysisS2NS"
-                android:enabled="true" />
+                android:name=".PL.S1.Paralysiss2.ParalysisS2NS"
+                android:enabled="true"/>
 
-        <activity android:name="com.example.prototype3.PL.Paralysiss2.ParalysisS2RA"
-                  android:excludeFromRecents="true"
-                  android:label=".Noti@string/notification"
-                  android:launchMode="singleTask"
-                  android:taskAffinity="" />
-        ////////////////////////////////////////////////////////////////////
+        <activity
+                android:name=".PL.S1.Paralysiss2.ParalysisS2RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
         <receiver
-                android:name="com.example.prototype3.PL.Paralysiss3.ParalysisS3AR"
-                android:enabled="true" />
+                android:name=".PL.S1.Paralysiss3.ParalysisS3AR"
+                android:enabled="true"/>
 
         <service
-                android:name="com.example.prototype3.PL.Paralysiss3.ParalysisS3NS"
-                android:enabled="true" />
+                android:name=".PL.S1.Paralysiss3.ParalysisS3NS"
+                android:enabled="true"/>
 
-        <activity android:name="com.example.prototype3.PL.Paralysiss3.ParalysisS3RA"
-                  android:excludeFromRecents="true"
-                  android:label=".Noti@string/notification"
-                  android:launchMode="singleTask"
-                  android:taskAffinity="" />
-////////////////////////////////////////////////////////////////////
+        <activity
+                android:name=".PL.S1.Paralysiss3.ParalysisS3RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
         <receiver
-                android:name="com.example.prototype3.PL.Paralysiss4.ParalysisS4AR"
-                android:enabled="true" />
+                android:name=".PL.S1.Paralysiss4.ParalysisS4AR"
+                android:enabled="true"/>
 
         <service
-                android:name="com.example.prototype3.PL.Paralysiss4.ParalysisS4NS"
-                android:enabled="true" />
+                android:name=".PL.S1.Paralysiss4.ParalysisS4NS"
+                android:enabled="true"/>
 
-        <activity android:name="com.example.prototype3.PL.Paralysiss4.ParalysisS4RA"
-                  android:excludeFromRecents="true"
-                  android:label=".Noti@string/notification"
-                  android:launchMode="singleTask"
-                  android:taskAffinity="" />
-        ////////////////////////////////////////////////////////////////////
+        <activity
+                android:name=".PL.S1.Paralysiss4.ParalysisS4RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
         <receiver
-                android:name="com.example.prototype3.PL.Paralysiss5.ParalysisS5AR"
-                android:enabled="true" />
+                android:name=".PL.S1.Paralysiss5.ParalysisS5AR"
+                android:enabled="true"/>
 
         <service
-                android:name="com.example.prototype3.PL.Paralysiss5.ParalysisS5NS"
-                android:enabled="true" />
+                android:name=".PL.S1.Paralysiss5.ParalysisS5NS"
+                android:enabled="true"/>
 
-        <activity android:name="com.example.prototype3.PL.Paralysiss5.ParalysisS5RA"
-                  android:excludeFromRecents="true"
-                  android:label=".Noti@string/notification"
-                  android:launchMode="singleTask"
-                  android:taskAffinity="" />
-        ////////////////////////////////////////////////////////////////////
+        <activity
+                android:name=".PL.S1.Paralysiss5.ParalysisS5RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
         <receiver
-                android:name="com.example.prototype3.PL.Paralysiss6.ParalysisS6AR"
-                android:enabled="true" />
+                android:name=".PL.S1.Paralysiss6.ParalysisS6AR"
+                android:enabled="true"/>
 
         <service
-                android:name="com.example.prototype3.PL.Paralysiss6.ParalysisS6NS"
-                android:enabled="true" />
+                android:name=".PL.S1.Paralysiss6.ParalysisS6NS"
+                android:enabled="true"/>
 
-        <activity android:name="com.example.prototype3.PL.Paralysiss6.ParalysisS6RA"
-                  android:excludeFromRecents="true"
-                  android:label=".Noti@string/notification"
-                  android:launchMode="singleTask"
-                  android:taskAffinity="" />
-        ////////////////////////////////////////////////////////////////////
+        <activity
+                android:name=".PL.S1.Paralysiss6.ParalysisS6RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
         <receiver
-                android:name="com.example.prototype3.PL.Paralysiss7.ParalysisS7AR"
-                android:enabled="true" />
+                android:name=".PL.S1.Paralysiss7.ParalysisS7AR"
+                android:enabled="true"/>
 
         <service
-                android:name="com.example.prototype3.PL.Paralysiss7.ParalysisS7NS"
-                android:enabled="true" />
+                android:name=".PL.S1.Paralysiss7.ParalysisS7NS"
+                android:enabled="true"/>
 
-        <activity android:name="com.example.prototype3.PL.Paralysiss7.ParalysisS7RA"
-                  android:excludeFromRecents="true"
-                  android:label=".Noti@string/notification"
-                  android:launchMode="singleTask"
-                  android:taskAffinity="" />
-        ////////////////////////////////////////////////////////////////////
+        <activity
+                android:name=".PL.S1.Paralysiss7.ParalysisS7RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
         <receiver
-                android:name="com.example.prototype3.PL.Paralysiss8.ParalysisS8AR"
-                android:enabled="true" />
+                android:name=".PL.S1.Paralysiss8.ParalysisS8AR"
+                android:enabled="true"/>
 
         <service
-                android:name="com.example.prototype3.PL.Paralysiss8.ParalysisS8NS"
-                android:enabled="true" />
+                android:name=".PL.S1.Paralysiss8.ParalysisS8NS"
+                android:enabled="true"/>
 
-        <activity android:name="com.example.prototype3.PL.Paralysiss8.ParalysisS8RA"
-                  android:excludeFromRecents="true"
-                  android:label=".Noti@string/notification"
-                  android:launchMode="singleTask"
-                  android:taskAffinity="" />
-        ////////////////////////////////////////////////////////////////////
+        <activity
+                android:name=".PL.S1.Paralysiss8.ParalysisS8RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
         <receiver
-                android:name="com.example.prototype3.PL.Paralysiss9.ParalysisS9AR"
-                android:enabled="true" />
+                android:name=".PL.S1.Paralysiss9.ParalysisS9AR"
+                android:enabled="true"/>
 
         <service
-                android:name="com.example.prototype3.PL.Paralysiss9.ParalysisS9NS"
-                android:enabled="true" />
+                android:name=".PL.S1.Paralysiss9.ParalysisS9NS"
+                android:enabled="true"/>
 
-        <activity android:name="com.example.prototype3.PL.Paralysiss9.ParalysisS9RA"
-                  android:excludeFromRecents="true"
-                  android:label=".Noti@string/notification"
-                  android:launchMode="singleTask"
-                  android:taskAffinity="" />
-        ////////////////////////////////////////////////////////////////////
+        <activity
+                android:name=".PL.S1.Paralysiss9.ParalysisS9RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
         <receiver
-                android:name=".Parkinson.ParkinsonS1AR"
-                android:enabled="true" />
+                android:name=".PL.S2.ParalysissS2.ParalysissS1AR"
+                android:enabled="true"/>
 
         <service
-                android:name=".Parkinson.ParkinsonS1NS"
-                android:enabled="true" />
+                android:name=".PL.S2.ParalysissS2.ParalysissS1NS"
+                android:enabled="true"/>
 
-        <activity android:name=".Parkinson.ParkinsonS1RA"
-                  android:excludeFromRecents="true"
-                  android:label=".Noti@string/notification"
-                  android:launchMode="singleTask"
-                  android:taskAffinity="" />
-        ////////////////////////////////////////////////////////////////////
+        <activity
+                android:name=".PL.S2.ParalysissS2.ParalysissS1RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
         <receiver
-                android:name=".Vascular.VascularS1AR"
-                android:enabled="true" />
+                android:name=".PL.S2.Paralysiss2S2.Paralysiss2S1AR"
+                android:enabled="true"/>
 
         <service
-                android:name=".Vascular.VascularS1NS"
-                android:enabled="true" />
+                android:name=".PL.S2.Paralysiss2S2.Paralysiss2S1NS"
+                android:enabled="true"/>
 
-        <activity android:name=".Vascular.VascularS1RA"
-                  android:excludeFromRecents="true"
-                  android:label=".Noti@string/notification"
-                  android:launchMode="singleTask"
-                  android:taskAffinity="" />
+        <activity
+                android:name=".PL.S2.Paralysiss2S2.Paralysiss2S1RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
 
+        <receiver
+                android:name=".PL.S2.Paralysiss3S2.Paralysiss3S1AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".PL.S2.Paralysiss3S2.Paralysiss3S1NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".PL.S2.Paralysiss3S2.Paralysiss3S1RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".PL.S2.Paralysiss4S2.Paralysiss4S1AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".PL.S2.Paralysiss4S2.Paralysiss4S1NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".PL.S2.Paralysiss4S2.Paralysiss4S1RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".PL.S2.Paralysiss5S2.Paralysiss5S1AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".PL.S2.Paralysiss5S2.Paralysiss5S1NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".PL.S2.Paralysiss5S2.Paralysiss5S1RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".PL.S2.Paralysiss6S2.Paralysiss6S1AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".PL.S2.Paralysiss6S2.Paralysiss6S1NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".PL.S2.Paralysiss6S2.Paralysiss6S1RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".PL.S2.Paralysiss7S2.Paralysiss7S1AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".PL.S2.Paralysiss7S2.Paralysiss7S1NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".PL.S2.Paralysiss7S2.Paralysiss7S1RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".PL.S2.Paralysiss8S2.Paralysiss8S1AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".PL.S2.Paralysiss8S2.Paralysiss8S1NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".PL.S2.Paralysiss8S2.Paralysiss8S1RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".PL.S2.Paralysiss9S2.Paralysiss9S1AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".PL.S2.Paralysiss9S2.Paralysiss9S1NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".PL.S2.Paralysiss9S2.Paralysiss9S1RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".PL.S3.Paralysiss1S3.Paralysiss1S3AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".PL.S3.Paralysiss1S3.Paralysiss1S3NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".PL.S3.Paralysiss1S3.Paralysiss1S3RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".PL.S3.Paralysiss2S3.Paralysiss2S3AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".PL.S3.Paralysiss2S3.Paralysiss2S3NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".PL.S3.Paralysiss2S3.Paralysiss2S3RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".PL.S3.Paralysiss3S3.Paralysiss3S3AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".PL.S3.Paralysiss3S3.Paralysiss3S3NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".PL.S3.Paralysiss3S3.Paralysiss3S3RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".PL.S3.Paralysiss4S3.Paralysiss4S3AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".PL.S3.Paralysiss4S3.Paralysiss4S3NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".PL.S3.Paralysiss4S3.Paralysiss4S3RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".PL.S3.Paralysiss5S3.Paralysiss5S3AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".PL.S3.Paralysiss5S3.Paralysiss5S3NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".PL.S3.Paralysiss5S3.Paralysiss5S3RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".PL.S3.Paralysiss6S3.Paralysiss6S3AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".PL.S3.Paralysiss6S3.Paralysiss6S3NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".PL.S3.Paralysiss6S3.Paralysiss6S3RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".PL.S3.Paralysiss7S3.Paralysiss7S3AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".PL.S3.Paralysiss7S3.Paralysiss7S3NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".PL.S3.Paralysiss7S3.Paralysiss7S3RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".PL.S3.Paralysiss8S3.Paralysiss8S3AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".PL.S3.Paralysiss8S3.Paralysiss8S3NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".PL.S3.Paralysiss8S3.Paralysiss8S3RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".PL.S3.Paralysiss9S3.Paralysiss9S3AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".PL.S3.Paralysiss9S3.Paralysiss9S3NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".PL.S3.Paralysiss9S3.Paralysiss9S3RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".Parkinson.S1.Parkinson1S1.ParkinsonS1AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".Parkinson.S1.Parkinson1S1.ParkinsonS1NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".Parkinson.S1.Parkinson1S1.ParkinsonS1RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".Parkinson.S1.Parkinson2S1.Parkinson2S1AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".Parkinson.S1.Parkinson2S1.Parkinson2S1NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".Parkinson.S1.Parkinson2S1.Parkinson2S1RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".Parkinson.S1.Parkinson3S1.Parkinson3S1AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".Parkinson.S1.Parkinson3S1.Parkinson3S1NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".Parkinson.S1.Parkinson3S1.Parkinson3S1RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".Parkinson.S1.Parkinson4S1.Parkinson4S1AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".Parkinson.S1.Parkinson4S1.Parkinson4S1NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".Parkinson.S1.Parkinson4S1.Parkinson4S1RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".Parkinson.S1.Parkinson5S1.Parkinson5S1AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".Parkinson.S1.Parkinson5S1.Parkinson5S1NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".Parkinson.S1.Parkinson5S1.Parkinson5S1RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".Parkinson.S1.Parkinson6S1.Parkinson6S1AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".Parkinson.S1.Parkinson6S1.Parkinson6S1NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".Parkinson.S1.Parkinson6S1.Parkinson6S1RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".Parkinson.S1.Parkinson7S1.Parkinson7S1AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".Parkinson.S1.Parkinson7S1.Parkinson7S1NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".Parkinson.S1.Parkinson7S1.Parkinson7S1RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".Parkinson.S1.Parkinson8S1.Parkinson8S1AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".Parkinson.S1.Parkinson8S1.Parkinson8S1NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".Parkinson.S1.Parkinson8S1.Parkinson8S1RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".Parkinson.S1.Parkinson9S1.Parkinson9S1AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".Parkinson.S1.Parkinson9S1.Parkinson9S1NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".Parkinson.S1.Parkinson9S1.Parkinson9S1RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".Parkinson.S2.Parkinson1S2.ParkinsonS2AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".Parkinson.S2.Parkinson1S2.ParkinsonS2NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".Parkinson.S2.Parkinson1S2.ParkinsonS2RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".Parkinson.S2.Parkinson2S2.Parkinson2S2AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".Parkinson.S2.Parkinson2S2.Parkinson2S2NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".Parkinson.S2.Parkinson2S2.Parkinson2S2RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".Parkinson.S2.Parkinson3S2.Parkinson3S2AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".Parkinson.S2.Parkinson3S2.Parkinson3S2NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".Parkinson.S2.Parkinson3S2.Parkinson3S2RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".Parkinson.S2.Parkinson4S2.Parkinson4S2AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".Parkinson.S2.Parkinson4S2.Parkinson4S2NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".Parkinson.S2.Parkinson4S2.Parkinson4S2RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".Parkinson.S2.Parkinson5S2.Parkinson5S2AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".Parkinson.S2.Parkinson5S2.Parkinson5S2NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".Parkinson.S2.Parkinson5S2.Parkinson5S2RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".Parkinson.S2.Parkinson6S2.Parkinson6S2AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".Parkinson.S2.Parkinson6S2.Parkinson6S2NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".Parkinson.S2.Parkinson6S2.Parkinson6S2RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".Parkinson.S2.Parkinson7S2.Parkinson7S2AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".Parkinson.S2.Parkinson7S2.Parkinson7S2NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".Parkinson.S2.Parkinson7S2.Parkinson7S2RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".Parkinson.S2.Parkinson8S2.Parkinson8S2AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".Parkinson.S2.Parkinson8S2.Parkinson8S2NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".Parkinson.S2.Parkinson8S2.Parkinson8S2RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".Parkinson.S2.Parkinson9S2.Parkinson9S2AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".Parkinson.S2.Parkinson9S2.Parkinson9S2NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".Parkinson.S2.Parkinson9S2.Parkinson9S2RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".Parkinson.S3.Parkinson1S3.ParkinsonS3AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".Parkinson.S3.Parkinson1S3.ParkinsonS3NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".Parkinson.S3.Parkinson1S3.ParkinsonS3RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".Parkinson.S3.Parkinson2S3.Parkinson2S3AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".Parkinson.S3.Parkinson2S3.Parkinson2S3NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".Parkinson.S3.Parkinson2S3.Parkinson2S3RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".Parkinson.S3.Parkinson3S3.Parkinson3S3AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".Parkinson.S3.Parkinson3S3.Parkinson3S3NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".Parkinson.S3.Parkinson3S3.Parkinson3S3RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".Parkinson.S3.Parkinson4S3.Parkinson4S3AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".Parkinson.S3.Parkinson4S3.Parkinson4S3NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".Parkinson.S3.Parkinson4S3.Parkinson4S3RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".Parkinson.S3.Parkinson5S3.Parkinson5S3AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".Parkinson.S3.Parkinson5S3.Parkinson5S3NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".Parkinson.S3.Parkinson5S3.Parkinson5S3RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".Parkinson.S3.Parkinson6S3.Parkinson6S3AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".Parkinson.S3.Parkinson6S3.Parkinson6S3NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".Parkinson.S3.Parkinson6S3.Parkinson6S3RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".Parkinson.S3.Parkinson7S3.Parkinson7S3AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".Parkinson.S3.Parkinson7S3.Parkinson7S3NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".Parkinson.S3.Parkinson7S3.Parkinson7S3RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".Parkinson.S3.Parkinson8S3.Parkinson8S3AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".Parkinson.S3.Parkinson8S3.Parkinson8S3NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".Parkinson.S3.Parkinson8S3.Parkinson8S3RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".Parkinson.S3.Parkinson9S3.Parkinson9S3AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".Parkinson.S3.Parkinson9S3.Parkinson9S3NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".Parkinson.S3.Parkinson9S3.Parkinson9S3RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".Vascular.S1.Vascular1S1.Vascular1S1AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".Vascular.S1.Vascular1S1.Vascular1S1NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".Vascular.S1.Vascular1S1.Vascular1S1RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".Vascular.S1.Vascular2S1.Vascular2S1AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".Vascular.S1.Vascular2S1.Vascular2S1NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".Vascular.S1.Vascular2S1.Vascular2S1RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".Vascular.S1.Vascular3S1.Vascular3S1AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".Vascular.S1.Vascular3S1.Vascular3S1NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".Vascular.S1.Vascular3S1.Vascular3S1RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".Vascular.S1.Vascular4S1.Vascular4S1AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".Vascular.S1.Vascular4S1.Vascular4S1NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".Vascular.S1.Vascular4S1.Vascular4S1RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".Vascular.S1.Vascular5S1.Vascular5S1AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".Vascular.S1.Vascular5S1.Vascular5S1NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".Vascular.S1.Vascular5S1.Vascular5S1RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".Vascular.S1.Vascular6S1.Vascular6S1AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".Vascular.S1.Vascular6S1.Vascular6S1NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".Vascular.S1.Vascular6S1.Vascular6S1RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".Vascular.S1.Vascular7S1.Vascular7S1AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".Vascular.S1.Vascular7S1.Vascular7S1NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".Vascular.S1.Vascular7S1.Vascular7S1RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".Vascular.S1.Vascular8S1.Vascular8S1AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".Vascular.S1.Vascular8S1.Vascular8S1NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".Vascular.S1.Vascular8S1.Vascular8S1RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".Vascular.S1.Vascular9S1.Vascular9S1AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".Vascular.S1.Vascular9S1.Vascular9S1NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".Vascular.S1.Vascular9S1.Vascular9S1RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".Vascular.S2.Vascular1S2.Vascular1S2AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".Vascular.S2.Vascular1S2.Vascular1S2NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".Vascular.S2.Vascular1S2.Vascular1S2RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".Vascular.S2.Vascular2S2.Vascular2S2AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".Vascular.S2.Vascular2S2.Vascular2S2NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".Vascular.S2.Vascular2S2.Vascular2S2RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".Vascular.S2.Vascular3S2.Vascular3S2AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".Vascular.S2.Vascular3S2.Vascular3S2NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".Vascular.S2.Vascular3S2.Vascular3S2RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".Vascular.S2.Vascular4S2.Vascular4S2AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".Vascular.S2.Vascular4S2.Vascular4S2NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".Vascular.S2.Vascular4S2.Vascular4S2RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".Vascular.S2.Vascular5S2.Vascular5S2AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".Vascular.S2.Vascular5S2.Vascular5S2NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".Vascular.S2.Vascular5S2.Vascular5S2RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".Vascular.S2.Vascular6S2.Vascular6S2AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".Vascular.S2.Vascular6S2.Vascular6S2NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".Vascular.S2.Vascular6S2.Vascular6S2RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".Vascular.S2.Vascular7S2.Vascular7S2AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".Vascular.S2.Vascular7S2.Vascular7S2NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".Vascular.S2.Vascular7S2.Vascular7S2RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".Vascular.S2.Vascular8S2.Vascular8S2AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".Vascular.S2.Vascular8S2.Vascular8S2NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".Vascular.S2.Vascular8S2.Vascular8S2RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".Vascular.S2.Vascular9S2.Vascular9S2AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".Vascular.S2.Vascular9S2.Vascular9S2NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".Vascular.S2.Vascular9S2.Vascular9S2RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".Vascular.S3.Vascular1S3.Vascular1S3AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".Vascular.S3.Vascular1S3.Vascular1S3NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".Vascular.S3.Vascular1S3.Vascular1S3RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".Vascular.S3.Vascular2S3.Vascular2S3AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".Vascular.S3.Vascular2S3.Vascular2S3NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".Vascular.S3.Vascular2S3.Vascular2S3RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".Vascular.S3.Vascular3S3.Vascular3S3AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".Vascular.S3.Vascular3S3.Vascular3S3NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".Vascular.S3.Vascular3S3.Vascular3S3RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".Vascular.S3.Vascular4S3.Vascular4S3AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".Vascular.S3.Vascular4S3.Vascular4S3NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".Vascular.S3.Vascular4S3.Vascular4S3RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".Vascular.S3.Vascular5S3.Vascular5S3AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".Vascular.S3.Vascular5S3.Vascular5S3NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".Vascular.S3.Vascular5S3.Vascular5S3RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".Vascular.S3.Vascular6S3.Vascular6S3AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".Vascular.S3.Vascular6S3.Vascular6S3NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".Vascular.S3.Vascular6S3.Vascular6S3RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".Vascular.S3.Vascular7S3.Vascular7S3AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".Vascular.S3.Vascular7S3.Vascular7S3NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".Vascular.S3.Vascular7S3.Vascular7S3RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".Vascular.S3.Vascular8S3.Vascular8S3AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".Vascular.S3.Vascular8S3.Vascular8S3NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".Vascular.S3.Vascular8S3.Vascular8S3RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".Vascular.S3.Vascular9S3.Vascular9S3AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".Vascular.S3.Vascular9S3.Vascular9S3NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".Vascular.S3.Vascular9S3.Vascular9S3RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
     </application>
 
 </manifest>

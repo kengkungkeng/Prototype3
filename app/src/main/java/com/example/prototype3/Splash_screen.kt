@@ -12,9 +12,8 @@ class Splash_screen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash_screen)
-        Log.d("NTa","Splash_Screen to NotificateAc")
         Handler().postDelayed({
-            val intent = Intent(this,NotificateActivity::class.java) //MainActivity
+            val intent = Intent(this,MainActivity::class.java) //MainActivity NotificateActivity
             startActivity(intent)
         },3000)
 

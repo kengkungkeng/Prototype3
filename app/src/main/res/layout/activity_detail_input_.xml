@@ -169,7 +169,7 @@
                     app:layout_constraintHorizontal_bias="0.497"
                     android:scrollbarSize="6dp" app:layout_constraintBottom_toTopOf="@+id/spinner2"
                     android:layout_marginBottom="8dp" app:layout_constraintTop_toBottomOf="@+id/telcare_patient2"
-                    android:layout_marginTop="8dp"/>
+                    android:layout_marginTop="8dp" android:textAlignment="center" android:spinnerMode="dialog"/>
             <Spinner
                     android:layout_width="250dp"
                     android:layout_height="40dp"
@@ -180,7 +180,8 @@
                     android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/spinner"
                     android:layout_marginTop="3dp" android:layout_marginBottom="5dp"
-                    app:layout_constraintBottom_toTopOf="@+id/detail_input_DB"/>
+                    app:layout_constraintBottom_toTopOf="@+id/detail_input_DB" android:spinnerMode="dialog"
+                    android:textAlignment="center"/>
             <TextView
                     android:text="ประเมินภาวะผู้ป่วย"
                     android:layout_width="200dp"

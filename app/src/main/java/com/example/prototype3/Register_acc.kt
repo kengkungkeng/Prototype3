@@ -59,7 +59,7 @@ class Register_acc : AppCompatActivity() {
                 }
                 sentDb()
 
-                val intent = Intent(this, MainActivity::class.java)
+                val intent = Intent(this, Main_menu_for_new::class.java)
                 startActivity(intent)
 
             }
@@ -88,7 +88,7 @@ class Register_acc : AppCompatActivity() {
         val rbb = rb.text.toString().trim()
 
         val userId = FirebaseAuth.getInstance().uid
-        val ref = FirebaseDatabase.getInstance().getReference("/Users/$userId")
+        val ref = FirebaseDatabase.getInstance().getReference("Users/$userId")
 
 
         val user = sentToDb(userId.toString(),mmmail,pppass,nnname,lllastname,bbbd,aaaaddress,rbb)
